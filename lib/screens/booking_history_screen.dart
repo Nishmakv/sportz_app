@@ -50,7 +50,9 @@ class _BookingHistoryState extends State<BookingHistory> {
                             borderRadius: BorderRadius.circular(5)),
                         child: const Center(
                             child:
-                                Icon(Ionicons.chevron_back_outline, size: 22))),
+                                Icon(Ionicons.chevron_back_outline, size: 22),
+                                ),
+                                ),
                   ),
                   const SizedBox(
                     width: 15,

@@ -5,7 +5,6 @@ import 'package:sportz_app/bloc/bloc/gallery_get_bloc.dart';
 import 'package:sportz_app/screens/gallery_screen.dart';
 import 'package:sportz_app/screens/home_tab.dart';
 import 'package:sportz_app/screens/login_screen.dart';
-import 'package:sportz_app/screens/notification_screen.dart';
 import 'package:sportz_app/screens/profile_screen.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:sportz_app/screens/register_team_view_screen.dart';
@@ -66,21 +65,6 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.only(right: 20),
             child: Row(
               children: [
-                // IconButton(
-                //   onPressed: () {
-                //     Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //         builder: (ctx) => const NotificationScreen(),
-                //       ),
-                //     );
-                //   },
-                //   icon: const Icon(
-                //     Ionicons.notifications_outline,
-                //     size: 28,
-                //     color: Colors.black,
-                //   ),
-                // ),
                 const SizedBox(width: 5),
                 userToken!.isNotEmpty
                     ? GestureDetector(

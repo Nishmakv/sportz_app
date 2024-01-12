@@ -9,8 +9,6 @@ class GetUserTurfDataSource {
     required double? latitude,
   }) async {
     List<UserTurfModel> userTurfModel = [];
-    print(
-        "http://13.126.57.93:8000/admin_app/user_location_fetch/?longitude=$longitude&latitude=$latitude");
     final response = await client.get(
       'http://13.126.57.93:8000/admin_app/user_location_fetch/?longitude=$longitude&latitude=$latitude',
       options: Options(
@@ -20,11 +18,11 @@ class GetUserTurfDataSource {
         },
       ),
     );
-    // print(userTurfModel);
-    print(response);
+   
+  
     (response.data['message'] as List).forEach((element) {
       userTurfModel.add(UserTurfModel.fromJson(element));
-      print(element);
+   
     });
 
     return userTurfModel;

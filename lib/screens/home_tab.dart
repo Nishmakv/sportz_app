@@ -4,7 +4,6 @@ import 'package:geolocator/geolocator.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:sportz_app/bloc/bloc/get_user_turf_bloc.dart';
 import 'package:sportz_app/model.dart/user_turf_model.dart';
-import 'package:sportz_app/widgets/player_leaderboard_card.dart';
 import 'package:sportz_app/widgets/team_leaderboard_list_card.dart';
 import 'package:sportz_app/widgets/slot.dart';
 import 'package:sportz_app/widgets/turf_list_card.dart';

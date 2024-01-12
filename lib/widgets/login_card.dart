@@ -113,7 +113,9 @@ class _LoginCardState extends State<LoginCard> {
                   obscureText: widget.obscureText,
                   keyboardType: widget.isNumeric ? TextInputType.number : null,
                   inputFormatters: widget.isNumeric
-                      ? [FilteringTextInputFormatter.allow(RegExp(r'[0-9]'))]
+                      ? [FilteringTextInputFormatter.allow(RegExp(r'[0-9]'),
+                      ),
+                      ]
                       : null, // Allow only numeric input
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
